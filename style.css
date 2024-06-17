@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.todo_container {
+  width: 100%;
+  height: 100vh;
+  background: #365E32;
+  background: linear-gradient(90deg, #365E32 37%, #81A263 68%);
+  /* background: rgb(212,118,31);
+  background: linear-gradient(90deg, rgba(212,118,31,1) 37%, rgba(255,205,0,1) 68%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo_contain {
+  width: 100%;
+  max-width: 500px;
+  background-color: #E7D37F;
+  text-align: center;
+  padding: 1.5rem 1.2rem;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding: 1rem 0;
+}
+.todo_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* border-bottom: 1px solid yellow; */
+  padding: 0.2rem 0;
+  background-color: #FD9B63;
+}
+.todo .todo_value {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  /* color: #fff; */
+}
+
+.todo:has(.todo_checkbox:checked) {
+  color: #555555;
+  background-color: #eeeeee;
+  text-decoration: line-through;
+}
